@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  lab:
+    build: .
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./lab_notebooks:/app/lab_notebooks
